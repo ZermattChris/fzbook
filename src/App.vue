@@ -13,7 +13,7 @@
         </ion-toolbar>
       </ion-header>
 
-      <ion-content ref="scrollingContents" scrollEvents="true" onIonScroll="">
+      <ion-content ref="content" scrollEvents="true" onIonScroll="">
         <ion-grid class="ion-no-padding">
           <ion-row>
             <ion-col size="2" class="maroon ion-hide-md-down"></ion-col>
@@ -202,9 +202,9 @@
       
     },
     methods: {
-      scrollToTop: () => {
-        this.$refs.scrollingContents.scrollToTop(200)
-        // console.log(event)
+      scrollToTop () {
+        this.$refs.content.scrollToTop(200)
+        //console.log(event)
       }
     }
   };
