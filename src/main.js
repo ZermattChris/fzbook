@@ -13,4 +13,3 @@ Vue.use(IonicVue);
 new Vue({
   render: h => h(App),
 }).$mount('#app')
-
